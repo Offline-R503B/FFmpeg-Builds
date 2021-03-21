@@ -52,7 +52,7 @@ docker run --rm -i "${UIDARGS[@]}" -v $PWD/ffbuild:/ffbuild "$IMAGE" bash -s <<E
     cd /ffbuild
     rm -rf ffmpeg prefix
 
-    git clone https://github.com/richardpl/FFmpeg.git ffmpeg
+    git clone https://github.com/richardpl/ffmpeg/tree/bink2 ffmpeg
     cd ffmpeg
     git checkout $GIT_BRANCH
 
